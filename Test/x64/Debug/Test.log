@@ -55,4 +55,4 @@ C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,1):
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56841): message : см. предыдущее определение "D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS"
 C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,1): warning C4005: D3D10_ERROR_FILE_NOT_FOUND: изменение макроопределения
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56850): message : см. предыдущее определение "D3D10_ERROR_FILE_NOT_FOUND"
-  Test.vcxproj -> F:\Projects\VS Projects\DirectX\x64\Debug\Test.exe
+  Test.vcxproj -> E:\Projects\VS Projects\DirectX\x64\Debug\Test.exe
