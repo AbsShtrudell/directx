@@ -1,4 +1,4 @@
-﻿  Source.cpp
+﻿  App.cpp
 C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(12,1): warning C4005: DXGI_STATUS_OCCLUDED: изменение макроопределения
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56388): message : см. предыдущее определение "DXGI_STATUS_OCCLUDED"
 C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(13,1): warning C4005: DXGI_STATUS_CLIPPED: изменение макроопределения
@@ -55,4 +55,46 @@ C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,1):
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56841): message : см. предыдущее определение "D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS"
 C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,1): warning C4005: D3D10_ERROR_FILE_NOT_FOUND: изменение макроопределения
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56850): message : см. предыдущее определение "D3D10_ERROR_FILE_NOT_FOUND"
-  Test.vcxproj -> E:\Projects\VS Projects\DirectX\x64\Debug\Test.exe
+  Source.cpp
+F:\Projects\VS Projects\DirectX\Test\ConfWin.h(3,1): warning C4005: _WIN32_WINNT: изменение макроопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\sdkddkver.h(218): message : см. предыдущее определение "_WIN32_WINNT"
+F:\Projects\VS Projects\DirectX\Test\ConfWin.h(44,1): warning C4005: STRICT: изменение макроопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(23): message : см. предыдущее определение "STRICT"
+  Window.cpp
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(37,9): warning C4003: недостаточно аргументов для вызова макроса, подобного функции, "WND_LAST_EXCEPT"
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(80,9): warning C4003: недостаточно аргументов для вызова макроса, подобного функции, "WND_LAST_EXCEPT"
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(80,1): warning C4297: Window::Window: ожидается, что функция не будет выдавать исключения, но она это делает
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(80,1): message : для функции указан атрибут __declspec(nothrow), throw(), noexcept(true) или noexcept
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\optional(82,17): warning C4244: инициализация: преобразование "WPARAM" в "int", возможна потеря данных
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(267): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_destruct_base<_Ty,true>::_Optional_destruct_base<WPARAM&>(std::in_place_t,WPARAM &)"
+          with
+          [
+              _Ty=int
+          ]
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(267): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_destruct_base<_Ty,true>::_Optional_destruct_base<WPARAM&>(std::in_place_t,WPARAM &)"
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\optional(238): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_construct_base<_Ty>::_Optional_construct_base<WPARAM&>(std::in_place_t,WPARAM &)"
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\optional(238): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_construct_base<_Ty>::_Optional_construct_base<WPARAM&>(std::in_place_t,WPARAM &)"
+          with
+          [
+              _Ty=int
+          ]
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(49): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::optional<int>::optional<WPARAM&,0>(_Ty2)"
+          with
+          [
+              _Ty2=WPARAM &
+          ]
+F:\Projects\VS Projects\DirectX\Test\Window.cpp(49): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::optional<int>::optional<WPARAM&,0>(_Ty2)"
+          with
+          [
+              _Ty2=WPARAM &
+          ]
+  Создание кода...
+  Test.vcxproj -> F:\Projects\VS Projects\DirectX\x64\Debug\Test.exe

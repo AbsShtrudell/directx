@@ -1,44 +1,26 @@
 #include <windows.h>
-#include <d3d11.h>
-#include <d3dx11.h>
 
-LRESULT CALLBACK WndProc(hWnd,)
+#include "App.h"
 
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	const auto pClassName = L"daddasd";
-
-	WNDCLASSEX wc = {0};
-	wc.cbSize = sizeof(wc);
-	wc.style = CS_OWNDC;
-	wc.lpfnWndProc = DefWindowProc;
-	wc.cbClsExtra = 0;
-	wc.cbWndExtra = 0;
-	wc.hInstance = hInstance;
-	wc.hCursor = nullptr;
-	wc.hbrBackground = nullptr;
-	wc.lpszMenuName = nullptr;
-	wc.lpszClassName = pClassName;
-	wc.hIconSm = nullptr;
-	RegisterClassEx(&wc);
-
-	HWND hWnd = CreateWindowEx(0, pClassName, L"Window",
-		WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU,
-		200, 200, 640, 480,
-		nullptr, nullptr, hInstance, nullptr
-	);
-
-	ShowWindow(hWnd, SW_SHOW);
-
-	MSG msg;
-
-	while (GetMessage(&msg, nullptr, 0, 0) > 0)
+	try 
 	{
-		TranslateMessage(&msg);
-		DispatchMessage(&msg);
+		return App{}.Go();
 	}
-
-	return 0;
+	catch (const BasicException& e)
+	{
+		MessageBox(nullptr, e.what(), e.GetType(), MB_OK | MB_ICONEXCLAMATION);
+	}
+	catch (const std::exception& e)
+	{
+		MessageBox(nullptr, e.what(), "Standart Exception", MB_OK | MB_ICONEXCLAMATION);
+	}
+	catch (...)
+	{
+		MessageBox(nullptr, "No details available", "Unknown Exception", MB_OK | MB_ICONEXCLAMATION);
+	}
+	return -1;
 }
 
 
