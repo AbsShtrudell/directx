@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{1d49ea9d-f7bc-4f3f-82ea-0ab88918bc23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXERR">
+      <UniqueIdentifier>{2ec15764-56ba-4107-9285-89dcf1129cf3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -38,6 +44,12 @@
     </ClCompile>
     <ClCompile Include="Graphics.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="DxgiInfoManager.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="dxerr.cpp">
+      <Filter>DXERR</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +80,12 @@
     <ClInclude Include="Graphics.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="DxgiInfoManager.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="dxerr.h">
+      <Filter>DXERR</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Test.rc">
@@ -78,5 +96,24 @@
     <Image Include="..\Resources\WHorse.ico">
       <Filter>Файлы ресурсов</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXGetErrorDescription.inl">
+      <Filter>DXERR</Filter>
+    </None>
+    <None Include="DXGetErrorString.inl">
+      <Filter>DXERR</Filter>
+    </None>
+    <None Include="DXTrace.inl">
+      <Filter>DXERR</Filter>
+    </None>
   </ItemGroup>
 </Project>

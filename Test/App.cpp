@@ -23,6 +23,12 @@ int App::Go()
 void App::DoFrame()
 {
 	const float c = sin(timer.Peek()) / 2.0f + 0.5f;
-	wnd.Gfx().Clearbuffer(c, c, 1.0f);
+	wnd.Gfx().Clearbuffer(0.0f, 0.5f, 1.0f);
+	wnd.Gfx().DrawTestTriangle(
+		timer.Peek(), 
+		(wnd.mouse.GetPosX()) / 400.f - 1.f, 
+		-(wnd.mouse.GetPosY()) / 300.f + 1.f
+		);
+	wnd.Gfx().DrawTestTriangle(-timer.Peek(),0,0);
 	wnd.Gfx().EndFrame();
 }

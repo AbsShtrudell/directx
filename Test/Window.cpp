@@ -38,7 +38,7 @@ void Window::SetTitle(const std::string& title)
 	}
 }
 
-std::optional<int> Window::ProcessMessages()
+std::optional<int> Window::ProcessMessages() noexcept
 {
 	MSG msg;
 
@@ -106,7 +106,7 @@ Window::~Window()
 	DestroyWindow(hWnd);
 }
 
-LRESULT Window::HandleMsgSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT Window::HandleMsgSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept
 {
 	if (msg == WM_NCCREATE)
 	{
@@ -121,7 +121,7 @@ LRESULT Window::HandleMsgSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-LRESULT Window::HandleMsgThunk(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT Window::HandleMsgThunk(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept
 {
 	Window* const pWnd = reinterpret_cast<Window*>(GetWindowLongPtr(hWnd, GWLP_USERDATA));
 	return pWnd->HandleMsg(hWnd, msg, wParam, lParam);
@@ -261,12 +261,6 @@ std::string Window::HrException::GetErrorDescription() const noexcept
 	return Exception::TranslateErrorCode(hr);
 }
 
-
-const char* Window::NoGfxException::GetType() const noexcept
-{
-	return "Window Exception [No Graphics]";
-}
-
 std::string Window::Exception::TranslateErrorCode(HRESULT hr) noexcept
 {
 	char* pMsgBuf = nullptr;
@@ -287,4 +281,9 @@ std::string Window::Exception::TranslateErrorCode(HRESULT hr) noexcept
 
 	LocalFree(pMsgBuf);
 	return errorString;
+}
+
+const char* Window::NoGfxException::GetType() const noexcept
+{
+	return "Window Exception [No Graphics]";
 }
