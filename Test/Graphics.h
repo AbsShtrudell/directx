@@ -4,13 +4,14 @@
 #include <d3d11.h>
 #include <wrl.h>
 #include <vector>
-#include "dxerr.h"
 #include "DxgiInfoManager.h"
-
-namespace wrl = Microsoft::WRL;
+#include <DirectXMath.h>
+#include <memory>
+#include <random>
 
 class Graphics
 {
+	friend class Bindable;
 public:
 	class Exception : public BasicException
 	{
@@ -55,17 +56,20 @@ public:
 	~Graphics() = default;
 
 	void EndFrame();
-	void Clearbuffer(float red, float green, float blue) noexcept;
-	void DrawTestTriangle(float angle, float x, float y);
+	void ClearBuffer(float red, float green, float blue) noexcept;
+	void DrawIndexed(UINT count);
+	void SetProjection(DirectX::FXMMATRIX proj) noexcept;
+	DirectX::XMMATRIX GetProjection() const noexcept;
 
 private:
+	DirectX::XMMATRIX projection;
 #ifndef NDEBUG
 	DxgiInfoManager infoManager;
 #endif
-	wrl::ComPtr<ID3D11Device> pDevice = nullptr;
-	wrl::ComPtr <IDXGISwapChain> pSwap = nullptr;
-	wrl::ComPtr <ID3D11DeviceContext> pContext = nullptr;
-	wrl::ComPtr <ID3D11RenderTargetView> pTarget = nullptr;
-	wrl::ComPtr <ID3D11DepthStencilView> pDSV = nullptr;
+	Microsoft::WRL::ComPtr<ID3D11Device> pDevice = nullptr;
+	Microsoft::WRL::ComPtr <IDXGISwapChain> pSwap = nullptr;
+	Microsoft::WRL::ComPtr <ID3D11DeviceContext> pContext = nullptr;
+	Microsoft::WRL::ComPtr <ID3D11RenderTargetView> pTarget = nullptr;
+	Microsoft::WRL::ComPtr <ID3D11DepthStencilView> pDSV = nullptr;
 };
 

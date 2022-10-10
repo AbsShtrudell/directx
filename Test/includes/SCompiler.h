@@ -1,10 +1,11 @@
+#pragma once
 #include <windows.h>
 #include <d3dcompiler.h>
 #include <d3dx11.h>
 
 #pragma comment(lib, "d3dcompiler.lib")
 
-HRESULT CompileShaderFromFile( LPCWSTR szFileName, LPCSTR szEntryPoint, LPCSTR szShaderModel, ID3DBlob** ppBlobOut )
+inline HRESULT CompileShaderFromFile( LPCWSTR szFileName, LPCSTR szEntryPoint, LPCSTR szShaderModel, ID3DBlob** ppBlobOut )
 {
     HRESULT hr = S_OK;
 

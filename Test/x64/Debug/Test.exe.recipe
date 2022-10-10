@@ -7,10 +7,16 @@
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\PixelShader.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\VertexShader.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendVS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexPS.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexVS.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

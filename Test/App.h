@@ -6,6 +6,7 @@ class App
 {
 public:
 	App();
+	~App();
 
 	int Go();
 
@@ -15,5 +16,7 @@ private:
 private:
 	Window wnd;
 	Timer timer;
+	std::vector<std::unique_ptr<class Drawable>> drawables;
+	static constexpr size_t nDrawables = 180;
 };
 
