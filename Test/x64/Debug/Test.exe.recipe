@@ -2,27 +2,27 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\Projects\VS Projects\DirectX\x64\Debug\Test.exe</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\Test.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>E:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendPS.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>E:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendVS.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>E:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexPS.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>E:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexVS.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>E:\Projects\VS Projects\DirectX\x64\Debug\TexturePS.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\TexturePS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>E:\Projects\VS Projects\DirectX\x64\Debug\TextureVS.cso</FullPath>
+      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\TextureVS.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

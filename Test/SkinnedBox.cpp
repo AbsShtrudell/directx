@@ -41,7 +41,7 @@ SkinnedBox::SkinnedBox(Graphics& gfx,
 
 		AddStaticBind(std::make_unique<VertexBuffer>(gfx, model.vertices));
 
-		AddStaticBind(std::make_unique<Texture>(gfx, L"E:\\Projects\\VS Projects\\DirectX\\Resources\\cube_texture.png"));
+		AddStaticBind(std::make_unique<Texture>(gfx, L"F:\\Projects\\VS Projects\\DirectX\\Resources\\cube_texture.png"));
 		AddStaticBind(std::make_unique<Sampler>(gfx));
 		auto pvs = std::make_unique<VertexShader>(gfx, L"TextureVS.hlsl");
 		auto pvsbc = pvs->GetBytecode();
@@ -83,6 +83,5 @@ DirectX::XMMATRIX SkinnedBox::GetTransformXM() const noexcept
 	namespace dx = DirectX;
 	return dx::XMMatrixRotationRollPitchYaw(pitch, yaw, roll) *
 		dx::XMMatrixTranslation(r, 0.0f, 0.0f) *
-		dx::XMMatrixRotationRollPitchYaw(theta, phi, chi) *
-		dx::XMMatrixTranslation(0.0f, 0.0f, 20.0f);
+		dx::XMMatrixRotationRollPitchYaw(theta, phi, chi);
 }
