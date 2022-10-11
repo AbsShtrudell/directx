@@ -105,6 +105,15 @@
     <ClCompile Include="Pyramid.cpp">
       <Filter>Исходные файлы\Drawable</Filter>
     </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Исходные файлы\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler.cpp">
+      <Filter>Исходные файлы\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinnedBox.cpp">
+      <Filter>Исходные файлы\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConfWin.h">
@@ -212,6 +221,15 @@
     <ClInclude Include="Pyramid.h">
       <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Файлы заголовков\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler.h">
+      <Filter>Файлы заголовков\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinnedBox.h">
+      <Filter>Файлы заголовков\Drawable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Test.rc">
@@ -236,6 +254,12 @@
     <FxCompile Include="ColorBlendVS.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
+    <FxCompile Include="TexturePS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="TextureVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXGetErrorDescription.inl">
@@ -247,5 +271,6 @@
     <None Include="DXTrace.inl">
       <Filter>DXERR</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
