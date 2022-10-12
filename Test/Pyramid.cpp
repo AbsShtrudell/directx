@@ -37,7 +37,7 @@ Pyramid::Pyramid(Graphics& gfx,
 				unsigned char a;
 			} color;
 		};
-		auto model = Cone::MakeTesselated<Vertex>(4);
+		auto model = Cone::MakeTesselated<Vertex>(5);
 
 		model.vertices[0].color = { 255,255,0 };
 		model.vertices[1].color = { 255,255,0 };

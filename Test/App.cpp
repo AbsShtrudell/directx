@@ -12,6 +12,7 @@
 #include <imgui/imgui_impl_dx11.h>
 #include <imgui/imgui_impl_win32.h>
 #include "Math.h"
+#include "AssImpTest.h"
 
 App::App()
 	: wnd(800, 600, "Test App")
@@ -48,6 +49,11 @@ App::App()
 					gfx, rng, adist, ddist,
 					odist, rdist
 					);
+			case 4:
+				return std::make_unique<AssImpTest>(
+					gfx, rng, adist, ddist,
+					odist, rdist, 1.5f
+					);
 			default:
 				assert(false && "bad drawable type in factory");
 				return {};
@@ -63,7 +69,7 @@ App::App()
 		std::uniform_real_distribution<float> bdist{ 0.4f,3.0f };
 		std::uniform_int_distribution<int> latdist{ 5,20 };
 		std::uniform_int_distribution<int> longdist{ 10,40 };
-		std::uniform_int_distribution<int> typedist{ 0,3 };
+		std::uniform_int_distribution<int> typedist{ 0,4 };
 	};
 
 	Factory f(wnd.Gfx());

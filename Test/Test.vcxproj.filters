@@ -150,6 +150,9 @@
     <ClCompile Include="ImguiManager.cpp">
       <Filter>ImGui\Source</Filter>
     </ClCompile>
+    <ClCompile Include="AssImpTest.cpp">
+      <Filter>Исходные файлы\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConfWin.h">
@@ -295,6 +298,9 @@
     </ClInclude>
     <ClInclude Include="includes\imgui\imstb_truetype.h">
       <Filter>ImGui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AssImpTest.h">
+      <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
