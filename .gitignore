@@ -66,7 +66,7 @@ StyleCopReport.xml
 *.ilk
 *.meta
 *.obj
-!test/resorces/*.obj
+!resorces/*.obj
 *.iobj
 *.pch
 *.pdb
