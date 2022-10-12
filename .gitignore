@@ -67,7 +67,7 @@ StyleCopReport.xml
 *.meta
 *.obj
 !Resources/*.obj
-!test/includes/assimp/bin/x64/assimp-vc140-mt.lib
+
 *.iobj
 *.pch
 *.pdb
