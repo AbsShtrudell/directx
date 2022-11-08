@@ -46,6 +46,12 @@
     <Filter Include="ImGui\Source">
       <UniqueIdentifier>{fcc3acee-58e7-41a3-b1c4-72237b0a3ac2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Lit">
+      <UniqueIdentifier>{12055af5-8a29-442c-a5f7-02930460b461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\UnLit">
+      <UniqueIdentifier>{fabd2834-9ef0-4958-8e23-0831164cd2b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -152,6 +158,27 @@
     </ClCompile>
     <ClCompile Include="AssImpTest.cpp">
       <Filter>Исходные файлы\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidSphere.cpp">
+      <Filter>Исходные файлы\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>Исходные файлы\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Исходные файлы\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyboxTransformCbuf.cpp">
+      <Filter>Исходные файлы\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeTexture.cpp">
+      <Filter>Исходные файлы\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Rasterizer.cpp">
+      <Filter>Исходные файлы\Bindable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +329,30 @@
     <ClInclude Include="AssImpTest.h">
       <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidSphere.h">
+      <Filter>Файлы заголовков\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Файлы заголовков\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>Файлы заголовков\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Файлы заголовков\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxTransformCbuf.h">
+      <Filter>Файлы заголовков\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeTexture.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Rasterizer.h">
+      <Filter>Файлы заголовков\Bindable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Test.rc">
@@ -314,23 +365,56 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="ColorIndexVS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="ColorIndexPS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="ColorBlendPS.hlsl">
-      <Filter>Shaders</Filter>
+      <Filter>Shaders\UnLit</Filter>
     </FxCompile>
     <FxCompile Include="ColorBlendVS.hlsl">
-      <Filter>Shaders</Filter>
+      <Filter>Shaders\UnLit</Filter>
+    </FxCompile>
+    <FxCompile Include="ColorIndexPS.hlsl">
+      <Filter>Shaders\UnLit</Filter>
+    </FxCompile>
+    <FxCompile Include="ColorIndexVS.hlsl">
+      <Filter>Shaders\UnLit</Filter>
     </FxCompile>
     <FxCompile Include="TexturePS.hlsl">
-      <Filter>Shaders</Filter>
+      <Filter>Shaders\UnLit</Filter>
     </FxCompile>
     <FxCompile Include="TextureVS.hlsl">
-      <Filter>Shaders</Filter>
+      <Filter>Shaders\UnLit</Filter>
+    </FxCompile>
+    <FxCompile Include="SolidVS.hlsl">
+      <Filter>Shaders\UnLit</Filter>
+    </FxCompile>
+    <FxCompile Include="SolidPS.hlsl">
+      <Filter>Shaders\UnLit</Filter>
+    </FxCompile>
+    <FxCompile Include="IndexedPhongPS.hlsl">
+      <Filter>Shaders\Lit</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongPS.hlsl">
+      <Filter>Shaders\Lit</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongVS.hlsl">
+      <Filter>Shaders\Lit</Filter>
+    </FxCompile>
+    <FxCompile Include="BlendedPhongVS.hlsl">
+      <Filter>Shaders\Lit</Filter>
+    </FxCompile>
+    <FxCompile Include="BlendedPhongPS.hlsl">
+      <Filter>Shaders\Lit</Filter>
+    </FxCompile>
+    <FxCompile Include="TexturedPhongPS.hlsl">
+      <Filter>Shaders\Lit</Filter>
+    </FxCompile>
+    <FxCompile Include="TexturedPhongVS.hlsl">
+      <Filter>Shaders\Lit</Filter>
+    </FxCompile>
+    <FxCompile Include="SkyboxVS.hlsl">
+      <Filter>Shaders\UnLit</Filter>
+    </FxCompile>
+    <FxCompile Include="SkyboxPS.hlsl">
+      <Filter>Shaders\UnLit</Filter>
     </FxCompile>
   </ItemGroup>
   <ItemGroup>

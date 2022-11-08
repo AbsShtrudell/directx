@@ -53,15 +53,7 @@ Graphics::Graphics(HWND hWnd)
 	GFX_THROW_INFO(pSwap->GetBuffer(0, __uuidof(ID3D11Resource),&pBackBuffer));
 	GFX_THROW_INFO(pDevice->CreateRenderTargetView(pBackBuffer.Get(), nullptr, &pTarget));
 
-	D3D11_DEPTH_STENCIL_DESC dsDesc = {};
-	dsDesc.DepthEnable = TRUE;
-	dsDesc.DepthWriteMask = D3D11_DEPTH_WRITE_MASK_ALL;
-	dsDesc.DepthFunc = D3D11_COMPARISON_LESS;
-
-	wrl::ComPtr<ID3D11DepthStencilState> pDSState;
-	GFX_THROW_INFO(pDevice->CreateDepthStencilState(&dsDesc,&pDSState));
-
-	pContext->OMSetDepthStencilState(pDSState.Get(), 1u);
+	SetStencile(true);
 
 	wrl::ComPtr<ID3D11Texture2D> pDepthStencil;
 	D3D11_TEXTURE2D_DESC descDepth = {};
@@ -180,6 +172,26 @@ void Graphics::SetCamera(DirectX::FXMMATRIX cam) noexcept
 DirectX::XMMATRIX Graphics::GetCamera() const noexcept
 {
 	return camera;
+}
+
+void Graphics::SetStencile(bool skybox)
+{
+	if (skybox)
+	{
+		D3D11_DEPTH_STENCIL_DESC dsDesc = {};
+		dsDesc.DepthEnable = TRUE;
+		dsDesc.DepthWriteMask = D3D11_DEPTH_WRITE_MASK_ZERO;
+		dsDesc.DepthFunc = D3D11_COMPARISON_LESS_EQUAL;
+
+		wrl::ComPtr<ID3D11DepthStencilState> pDSState;
+		pDevice->CreateDepthStencilState(&dsDesc, &pDSState);
+
+		pContext->OMSetDepthStencilState(pDSState.Get(), 1u);
+	}
+	else
+	{
+		pContext->OMSetDepthStencilState(NULL, 0);
+	}
 }
 
 Graphics::HrException::HrException(int line, const char* file, HRESULT hr, std::vector<std::string> infoMsgs) noexcept
