@@ -3,7 +3,7 @@
 #include "GraphicsThrowMacros.h"
 #include "Sphere.h"
 
-SolidSphere::SolidSphere(Graphics& gfx, float radius)
+SolidSphere::SolidSphere(Graphics& gfx, float radius) : timer(), cbuf(gfx)
 {
 	namespace dx = DirectX;
 
@@ -24,13 +24,6 @@ SolidSphere::SolidSphere(Graphics& gfx, float radius)
 
 		AddStaticBind(std::make_unique<PixelShader>(gfx, L"SolidPS.hlsl"));
 
-		struct PSColorConstant
-		{
-			dx::XMFLOAT3 color = { 1.0f,1.0f,1.0f };
-			float padding;
-		} colorConst;
-		AddStaticBind(std::make_unique<PixelConstantBuffer<PSColorConstant>>(gfx, colorConst));
-
 		const std::vector<D3D11_INPUT_ELEMENT_DESC> ied =
 		{
 			{ "POSITION",0,DXGI_FORMAT_R32G32B32_FLOAT,0,0,D3D11_INPUT_PER_VERTEX_DATA,0 },
@@ -47,11 +40,21 @@ SolidSphere::SolidSphere(Graphics& gfx, float radius)
 	AddBind(std::make_unique<TransformCbuf>(gfx, *this));
 }
 
-void SolidSphere::Update(float dt) noexcept {}
+void SolidSphere::Update(float dt) noexcept 
+{
+	
+}
 
 void SolidSphere::SetPos(DirectX::XMFLOAT3 pos) noexcept
 {
 	this->pos = pos;
+}
+
+void SolidSphere::Bond(Graphics& gfx)
+{
+	float time = timer.Peek();
+	cbuf.Update(gfx, { { 1.0f,1.0f,1.0f } , 0.f, time });
+	cbuf.Bind(gfx);
 }
 
 DirectX::XMMATRIX SolidSphere::GetTransformXM() const noexcept

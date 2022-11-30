@@ -49,6 +49,7 @@ void PointLight::Reset() noexcept
 void PointLight::Draw(Graphics& gfx) const noexcept(!IS_DEBUG)
 {
 	mesh.SetPos(cbData.pos);
+	mesh.Bond(gfx);
 	mesh.Draw(gfx);
 }
 
