@@ -3,9 +3,11 @@
 #include "CubeTexture.h"
 #include "Sampler.h"
 #include "GraphicsThrowMacros.h"
-#include "BindableBase.h"
+#include "BindableCommon.h"
 #include "SkyboxTransformCbuf.h"
 #include "Rasterizer.h"
+
+using namespace Bind;
 
 Skybox::Skybox(Graphics& gfx)
 {
@@ -23,7 +25,7 @@ Skybox::Skybox(Graphics& gfx)
 
 		AddStaticBind(std::make_unique<VertexBuffer>(gfx, model.vertices));
 
-		AddStaticBind(std::make_unique<CubeTexture>(gfx, L"F:\\Projects\\VS Projects\\DirectX\\Resources\\skymap.dds"));
+		AddStaticBind(std::make_unique<CubeTexture>(gfx, L"..\\Resources\\skymap.dds"));
 
 		AddStaticBind(std::make_unique<Sampler>(gfx));
 

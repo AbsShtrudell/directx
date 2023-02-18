@@ -1,8 +1,9 @@
 #include "Melon.h"
-#include "BindableBase.h"
+#include "BindableCommon.h"
 #include "GraphicsThrowMacros.h"
 #include "Sphere.h"
 
+using namespace Bind;
 
 Melon::Melon(Graphics& gfx,
 	std::mt19937& rng,

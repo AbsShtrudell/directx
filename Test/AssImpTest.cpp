@@ -1,11 +1,13 @@
 #include "AssImpTest.h"
-#include "BindableBase.h"
+#include "BindableCommon.h"
 #include "GraphicsThrowMacros.h"
 #include "Texture.h"
 #include "Sampler.h"
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
+
+using namespace Bind;
 
 AssImpTest::AssImpTest(Graphics& gfx, std::mt19937& rng,
 	std::uniform_real_distribution<float>& adist,

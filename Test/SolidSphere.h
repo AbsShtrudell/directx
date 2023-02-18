@@ -21,6 +21,6 @@ private:
 private:
 	DirectX::XMFLOAT3 pos = { 1.0f,1.0f,1.0f };
 	Timer timer;
-	mutable PixelConstantBuffer<PSColorConstant> cbuf;
+	mutable Bind::PixelConstantBuffer<PSColorConstant> cbuf;
 };
 

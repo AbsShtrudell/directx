@@ -111,13 +111,7 @@
     <ClCompile Include="Drawable.cpp">
       <Filter>Исходные файлы\Drawable</Filter>
     </ClCompile>
-    <ClCompile Include="Box.cpp">
-      <Filter>Исходные файлы\Drawable</Filter>
-    </ClCompile>
     <ClCompile Include="Melon.cpp">
-      <Filter>Исходные файлы\Drawable</Filter>
-    </ClCompile>
-    <ClCompile Include="Pyramid.cpp">
       <Filter>Исходные файлы\Drawable</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
@@ -125,9 +119,6 @@
     </ClCompile>
     <ClCompile Include="Sampler.cpp">
       <Filter>Исходные файлы\Bindable</Filter>
-    </ClCompile>
-    <ClCompile Include="SkinnedBox.cpp">
-      <Filter>Исходные файлы\Drawable</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Исходные файлы</Filter>
@@ -165,9 +156,6 @@
     <ClCompile Include="SolidSphere.cpp">
       <Filter>Исходные файлы\Drawable</Filter>
     </ClCompile>
-    <ClCompile Include="Cylinder.cpp">
-      <Filter>Исходные файлы\Drawable</Filter>
-    </ClCompile>
     <ClCompile Include="Skybox.cpp">
       <Filter>Исходные файлы\Drawable</Filter>
     </ClCompile>
@@ -179,6 +167,15 @@
     </ClCompile>
     <ClCompile Include="Rasterizer.cpp">
       <Filter>Исходные файлы\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexLayout.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Исходные файлы\Drawable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -248,13 +245,10 @@
     <ClInclude Include="TransformCbuf.h">
       <Filter>Файлы заголовков\Bindable</Filter>
     </ClInclude>
-    <ClInclude Include="BindableBase.h">
+    <ClInclude Include="BindableCommon.h">
       <Filter>Файлы заголовков\Bindable</Filter>
     </ClInclude>
     <ClInclude Include="Drawable.h">
-      <Filter>Файлы заголовков\Drawable</Filter>
-    </ClInclude>
-    <ClInclude Include="Box.h">
       <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
     <ClInclude Include="DrawableBase.h">
@@ -284,17 +278,11 @@
     <ClInclude Include="Melon.h">
       <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="Pyramid.h">
-      <Filter>Файлы заголовков\Drawable</Filter>
-    </ClInclude>
     <ClInclude Include="Texture.h">
       <Filter>Файлы заголовков\Bindable</Filter>
     </ClInclude>
     <ClInclude Include="Sampler.h">
       <Filter>Файлы заголовков\Bindable</Filter>
-    </ClInclude>
-    <ClInclude Include="SkinnedBox.h">
-      <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Файлы заголовков</Filter>
@@ -338,9 +326,6 @@
     <ClInclude Include="Object.h">
       <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="Cylinder.h">
-      <Filter>Файлы заголовков\Drawable</Filter>
-    </ClInclude>
     <ClInclude Include="Skybox.h">
       <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
@@ -352,6 +337,24 @@
     </ClInclude>
     <ClInclude Include="Rasterizer.h">
       <Filter>Файлы заголовков\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexLayout.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionalNoexcept.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Файлы заголовков\Drawable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

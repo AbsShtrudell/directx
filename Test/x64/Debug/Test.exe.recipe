@@ -2,60 +2,60 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\Test.exe</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\Test.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\BlendedPhongPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\BlendedPhongPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\BlendedPhongVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\BlendedPhongVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\ColorBlendVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\ColorIndexVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\IndexedPhongPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\IndexedPhongPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\PhongPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\PhongPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\PhongVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\PhongVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\SkyboxPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\SkyboxPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\SkyboxVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\SkyboxVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\SolidPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\SolidPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\SolidVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\SolidVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\TexturedPhongPS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\TexturedPhongPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\TexturedPhongVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\TexturedPhongVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\TexturePS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\TexturePS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>F:\Projects\VS Projects\DirectX\x64\Debug\TextureVS.cso</FullPath>
+      <FullPath>W:\Projects\VS Projects\DirectX\x64\Debug\TextureVS.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
