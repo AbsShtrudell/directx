@@ -1,8 +1,0 @@
-﻿  compilation object save succeeded; see W:\Projects\VS Projects\DirectX\x64\Debug\PhongPS.cso
-  compilation object save succeeded; see W:\Projects\VS Projects\DirectX\x64\Debug\PhongVS.cso
-  Mesh.cpp
-W:\Projects\VS Projects\DirectX\Test\includes\assimp\mesh.h(497,1): warning C4099: aiMesh: имя типа, ранее отображенное с помощью "class", теперь отображено с помощью "struct"
-W:\Projects\VS Projects\DirectX\Test\includes\assimp\mesh.h(496,8): message : см. объявление "aiMesh"
-W:\Projects\VS Projects\DirectX\Test\includes\assimp\scene.h(79,1): warning C4099: aiNode: имя типа, ранее отображенное с помощью "class", теперь отображено с помощью "struct"
-W:\Projects\VS Projects\DirectX\Test\includes\assimp\scene.h(78,19): message : см. объявление "aiNode"
-  Test.vcxproj -> W:\Projects\VS Projects\DirectX\x64\Debug\Test.exe
